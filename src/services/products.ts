@@ -14,8 +14,8 @@ class ProductService {
     return products;
   }
 
-  public async create(product: IProductModel): Promise<IProductModel> {
-    const productCreated = await this.model.create(product);
+  create(product: IProductModel): Promise<IProductModel> {
+    const productCreated = this.model.create(product);
     return productCreated;
   }
 }
