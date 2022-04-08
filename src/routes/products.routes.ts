@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import ProductsController from '../controllers/products';
-import { authName, authAmount } from '../middleware/authProducts';
+import { authName, authAmount } from '../middleware/validateProducts';
 
 const router = Router();
 
